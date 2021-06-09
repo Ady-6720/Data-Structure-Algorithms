@@ -20,7 +20,13 @@ int main() {
    cout<<"\n\n-------Creating An array in the heap-----------\n\t\t\t\t\t&\n-------accessing Elements using for loop-------"<<endl;
    int *q;
    q=new int[5]; //we used this to access array inside heap
-  
+   q[0]=10;q[1]=12;q[2]=22;q[3]=45;q[4]=123;
+   for(int i=0;i<5;i++)
+      {
+          cout<<q[i]<<endl;
+      }
+   return 0;
+}
   
   
   /* OUTPUT:
