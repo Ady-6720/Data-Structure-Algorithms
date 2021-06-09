@@ -1,9 +1,13 @@
 //POINTERS
+// Irrespective of data type at adress pointer takes "8 byte" 
 //pointer is a address variable , it will store addres  of data not the data ,they are used to access data indirectly
 //pointers are used to access HEAP memory
 //HEAP MEMORY
 //Pointer is also used to access some data which is external to program or accessing the resources
 //Pointers are also used for passing parameters
+
+
+
 #include <iostream>
 #include<stdio.h>
 using namespace std;
