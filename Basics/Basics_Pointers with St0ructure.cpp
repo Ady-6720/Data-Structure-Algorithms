@@ -12,15 +12,13 @@ struct Rectangle      // Initialization of structure Rectangle
 
 int main()
 {
-     Rectangle r={10,15};   // initializing vaues of Length and breadth in rectangle r
-     cout<<"Length= "<<r.length<<endl;  //to get values
-     cout<<"Breadth= "<<r.breadth<<endl;  //to get values
+     struct Rectangle *p;
+     p= new Rectangle;
      
-     cout<<"____________________________________________"<<endl;
-  
-     cout<<"Getting values of variables using pointer"<<endl;
+     p->length=20;      // arrow function id=s used to give value to pointer, pointing to a structure
+     p->breadth=10;
      
-     Rectangle *p=&r;                     //Initializing pointer "p" for structure rectangle "r"
+   
      cout<<"Length= "<<p->length<<endl;   //to get values from pointer use arrow i.e ->
      cout<<"Breadth= "<<p->breadth<<endl;
 }
@@ -28,9 +26,7 @@ int main()
 
 /*    
     OUTPUT
-                Length= 10
-                Breadth= 15
-                ____________
-                Length= 10
-                Breadth= 15
-  */
+                Length= 20
+                Breadth= 10
+                
+ */
