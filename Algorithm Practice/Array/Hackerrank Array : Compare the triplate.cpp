@@ -16,21 +16,19 @@ Given a and b, determine their respective comparison points.
 using namespace std;
 
 int main(){
-    int a[2],b[2];
+    int a[3],b[3];
     int p1=0,p2=0,i;
     cin>>a[0]>>a[1]>>a[2];
     cin>>b[0]>>b[1]>>b[2];
     for(i=0;i<3;i++){
         if(a[i]>b[i]){
-            p1+=1;
+            p1++;
             }
         else if(a[i]<b[i]){
-            p2+=1;
-            }
-        else{
-            continue;
+            p2++;
             }
     }
+
     cout<<p1<<" "<<p2;
     
     return 0;
