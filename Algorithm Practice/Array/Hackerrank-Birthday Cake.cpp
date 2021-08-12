@@ -8,8 +8,9 @@ using namespace std;
 
 int main(){
     long long int i,big,tallc=0;
-    int n,a[n];
+    int n;
     cin>>n;
+    int a[n];
     for(i=0;i<n;i++){
         cin>>a[i];
     }
@@ -21,6 +22,9 @@ int main(){
     }
     for(i=0;i<n;i++){
         if(big==a[i])tallc++;
+        else{
+            continue;
+        }
     }    
     cout<<tallc<<endl;
     return 0;
